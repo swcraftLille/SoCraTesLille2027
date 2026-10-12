@@ -1,0 +1,9 @@
+{
+  "name": "socrates-lille",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 5173 --bind 0.0.0.0",
+    "start": "python3 -m http.server 5173 --bind 0.0.0.0"
+  }
+}
