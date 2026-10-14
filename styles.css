@@ -56,10 +56,14 @@ nav > a:hover:not(.button) { text-decoration: underline; }
 .card { padding: 2rem; border: 1px solid #DED5CB; border-radius: .35rem; background: var(--surface); }
 .card p, .values p { margin: 0; color: var(--muted); font-size: 1rem; }
 .card-symbol { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; margin-bottom: 1.75rem; border-radius: 50%; background: #F4E8DE; color: var(--accent); font-family: monospace; font-size: 1.4rem; }
+.forum-gallery { margin-top: 3rem; }
+.forum-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.forum-photos img { width: 100%; height: auto; border-radius: .35rem; }
 .format-section { background: var(--text); color: var(--background); }
 .format-section .eyebrow { color: var(--background); }
 .format-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 5rem; }
 .format-layout > div > p:not(.eyebrow) { font-size: 1rem; }
+.place-photo, .board-photo { width: 100%; height: auto; margin-top: 2rem; border-radius: .35rem; }
 .format-steps { margin: 0; padding: 0; list-style: none; counter-reset: steps; }
 .format-steps li { position: relative; counter-increment: steps; padding: 0 0 1.5rem 4rem; margin-bottom: 1.5rem; border-bottom: 1px solid #56616A; }
 .format-steps li:last-child { margin-bottom: 0; padding-bottom: 0; border: 0; }
@@ -110,6 +114,7 @@ summary:hover { color: var(--accent); }
 }
 @media (max-width: 48rem) {
   .hero, .format-layout, .practical-layout, .faq-section, .organisation { grid-template-columns: minmax(0, 1fr); }
+  .forum-photos { grid-template-columns: minmax(0, 1fr); }
   .hero { gap: 2rem; }
   .hero-art { max-width: 32rem; margin-inline: auto; }
   nav { gap: .25rem 1rem; }
