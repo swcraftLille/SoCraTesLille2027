@@ -59,9 +59,8 @@ nav > a:hover:not(.button) { text-decoration: underline; }
 .card { padding: 2rem; border: 1px solid #DED5CB; border-radius: .35rem; background: var(--surface); }
 .card p, .values p { margin: 0; color: var(--muted); font-size: 1rem; }
 .card-symbol { display: inline-flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; margin-bottom: 1.75rem; border-radius: 50%; background: #F4E8DE; color: var(--accent); font-family: monospace; font-size: 1.4rem; }
-.forum-gallery { margin-top: 3rem; }
-.forum-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
-.forum-photos img { width: 100%; height: auto; border-radius: .35rem; }
+.event-grid { grid-auto-rows: minmax(20rem, 1fr); }
+.card-photo { width: 100%; height: 100%; min-height: 0; object-fit: cover; border-radius: .35rem; }
 .format-section { background: var(--text); color: var(--background); }
 .format-section .eyebrow { color: var(--background); }
 .format-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 5rem; }
@@ -117,7 +116,6 @@ summary:hover { color: var(--accent); }
 }
 @media (max-width: 48rem) {
   .hero, .format-layout, .practical-layout, .faq-section, .organisation { grid-template-columns: minmax(0, 1fr); }
-  .forum-photos { grid-template-columns: minmax(0, 1fr); }
   .hero-art { max-width: 32rem; margin: 2rem auto 0; }
   nav { gap: .25rem 1rem; }
   .organisation .supporter { justify-self: start; max-width: 100%; }
